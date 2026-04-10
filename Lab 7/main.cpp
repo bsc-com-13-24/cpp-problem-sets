@@ -7,8 +7,6 @@ using namespace std;
 
 int main()
 {
-    Area area;
-
     bool quit = false;
 
     while (!quit)
@@ -29,7 +27,7 @@ int main()
                 cout << "Enter radius: " << endl;
                 cin >> radius;
                 crc.setRadius(radius);
-                cout << "The area of the circle with radius " << radius << " is: " << area.getAreaOfCircle(crc) << endl;
+                cout << "The area of the circle with radius " << radius << " is: " << Area::getAreaOfCircle(crc) << endl;
                 break;
             }
             case 2:
@@ -39,7 +37,7 @@ int main()
                 cout << "Enter the length of the square" << endl;
                 cin >> length;
                 sqr.setLength(length);
-                cout << "The area of the square with length " << length << " is: " << area.getAreaOfSquare(sqr) << endl;
+                cout << "The area of the square with length " << length << " is: " << Area::getAreaOfSquare(sqr) << endl;
                 break;
             }
             case 3:
@@ -52,7 +50,7 @@ int main()
                 cout << "Enter the height of the triangle" << endl;
                 cin >> height;
                 tri.setHeight(height);
-                cout << "The are of the triangle with base " << base << "and height " << height << " is: " << area.getAreaOfTriangle(tri) << endl;
+                cout << "The are of the triangle with base " << base << "and height " << height << " is: " << Area::getAreaOfTriangle(tri) << endl;
                 break;
             }
             case 4:
